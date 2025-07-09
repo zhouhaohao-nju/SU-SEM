@@ -127,7 +127,7 @@ class thwImageProcessorGPU:
             if (half_peak_width > max_thw) {
                 half_peak_width = max_thw;
             }
-            result[pixel_idx] = half_peak_width;
+            result[pixel_idx] = half_peak_width / 2;
         }
         """)
 
@@ -197,11 +197,11 @@ class thwImageProcessorGPU:
 
 def main():
     config = {
-        'folder_path': 'D:/dataset/90min',
+        'folder_path': 'D:/dataset',
         'roi': (33, 50, 620, 970),
         'anchor_z': -110,
         'max_thw': 90,
-        'output_path': 'D:/dataset/90min/result.bmp'
+        'output_path': 'D:/dataset/result.bmp'
     }
 
     processor = thwImageProcessorGPU(config)

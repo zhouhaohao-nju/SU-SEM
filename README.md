@@ -1,2 +1,3 @@
-# SU-SEM
-datasets for SU-SEM methods
+# iSEM
+
+Python code is used to calculate the transient width of the stimulated emission signal.
